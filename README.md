@@ -6,4 +6,6 @@ The goal of this project is to update AutoHotKey macros used to automate account
 
 06162020
 
-Gathering initial material from autohotkey.com
+Gathering initial material from autohotkey.com forums
+
+https://www.autohotkey.com/boards/viewtopic.php?f=76&t=76691&p=332879#p332879
