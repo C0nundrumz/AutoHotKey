@@ -8,3 +8,31 @@ The goal of this project is to update AutoHotKey macros used to automate account
 #WinActivateForce
 #SingleInstance Force
 #Include %A_ScriptDir%
+SetTitleMatchMode, 2
+SetTitleMatchMode, Fast
+
+MakeSureOpen()
+{
+  WinWait, http://google.com,
+  If WinNotActive, http://google.com, ,WinActivate, http://google.com,
+  WinWaitActive, http://google.com,
+  Sleep, 200
+  }
+  
+  Msgbox,3,Macro_Name, Description_Here `n and here
+  IfMsgbox Cancel
+  Goto GuiClose
+  else IfMsgbox No
+  {
+  Goto Next_Step
+  }
+  else IfMsgbox Yes
+  ;;;code
+  return
+  Next_Step:
+  ;;;code
+  return
+  GuiClose:
+  #=::ExitApp  
+  
+  
