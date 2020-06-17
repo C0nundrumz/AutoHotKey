@@ -21,10 +21,11 @@ MakeSureOpen()
   Goto Next_Step
   }
   else IfMsgbox Yes
-  ;;;code
+  ;;;insert code here
+  MakeSureOpen()
   return
   Next_Step:
-  ;;;code
+  ;;;insert code here
   return
   GuiClose:
   #=::ExitApp  
